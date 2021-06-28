@@ -25,8 +25,10 @@ const useStyles = makeStyles((theme) => ({
 export default function Home() {
   const classes = useStyles();
   return (
-    <Container maxWidth='lg'>
-      <Navbar />
-    </Container>
+    <div>
+      <Container maxWidth='lg'>
+        <Navbar />
+      </Container>
+    </div>
   );
 }
