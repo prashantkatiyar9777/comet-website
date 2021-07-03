@@ -20,7 +20,7 @@ const primaryTheme = createMuiTheme({
     },
     typography: {
         fontFamily: "Poppins",
-        fontWeightLight: 200,
+        fontWeightLight: 300,
         fontWeightRegular: 400,
         fontWeightMedium: 500,
         fontWeightBold: 700
