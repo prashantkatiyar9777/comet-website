@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import TextField from '@material-ui/core/TextField';
+import Link from '@material-ui/core/Link';
 import { Play } from 'react-feather';
 import orbit from '../public/orbit.png';
 import iedc from '../public/iedc.png';
@@ -20,6 +21,7 @@ import FormHelperText from '@material-ui/core/FormHelperText';
 import FormControl from '@material-ui/core/FormControl';
 import { makeStyles } from '@material-ui/core/styles';
 import Navbar from '../components/navbar';
+import Footer from '../components/footer';
 
 const useStyles = makeStyles((theme) => {
   return {
@@ -46,6 +48,23 @@ const useStyles = makeStyles((theme) => {
         },
       },
     },
+    footer: {
+      backgroundColor: '#000000',
+      marginTop: '10em'
+    },
+    footerText: {
+      color: '#FFFFFF'
+    },
+    line: {
+      color: '#FFFFFF',
+    },
+    instagram: { 
+      background: '#f09433', 
+      background: '-moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)',
+      background: '-webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)', 
+      background: 'linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)',
+      filter: 'progid:DXImageTransform.Microsoft.gradient( startColorstr=\'#f09433\', endColorstr=\'#bc1888\',GradientType=1 )',
+    }
   }
 });
 
@@ -73,16 +92,6 @@ export default function Home() {
                   </Grid>
                   <Grid item className={classes.textBox}>
                     <FormControl fullWidth>
-                      {/* <Box display="flex" p={1}>
-                        <Box p={1} width='100%'>
-                          <TextField fullWidth variant='outlined' label='Email'/>
-                        </Box>
-                        <Box p={1} flexShrink={1}>
-                          <CircleButton>
-                            <Play color='#0D81FD'/>
-                          </CircleButton>
-                        </Box>
-                      </Box> */}
                       <Grid container direction='row' spacing={3} justify='flex-start' alignItems="center">
                         <Grid item xs={12} sm={12} xl={6}>
                           <Typography variant="body1" display="block" gutterBottom color='primary'>
@@ -105,8 +114,7 @@ export default function Home() {
                             </center>
                           </Hidden>
                         </Grid>
-                      </Grid>
-                      
+                      </Grid>  
                     </FormControl>
                   </Grid>
                 </Grid>
@@ -197,64 +205,72 @@ export default function Home() {
               <Grid item>
                 <Grid container direction='row' alignItems='center' justify='center' spacing={4}>
                   <Grid item>
-                    <HexagonFlip>
-                      <Hexagon height={260} stroke='#0D81FD' strokeWidth={5} radius={2}>
-                        <Image src='https://media-exp1.licdn.com/dms/image/C4E03AQFdayrGucPUIg/profile-displayphoto-shrink_800_800/0/1624708297738?e=1631145600&v=beta&t=UKHmuyrxFF8e3B-HUZoc1594i-_L9fXLV3AvaDvVvEM' alt='cto' layout='fill' />
-                      </Hexagon>
-                      <Hexagon height={260} stroke='#0D81FD' strokeWidth={5} radius={2}>
-                        <Typography variant='h4' align='center'>
-                          Tejas Agrawal
-                        </Typography>
-                        <Typography variant='subtitle' align='center'>
-                          Co-Founder and CTO
-                        </Typography>
-                      </Hexagon>
-                    </HexagonFlip>
+                    <Link href='https://www.linkedin.com/in/prashant-milan-katiyar/' color='inherit'>
+                      <HexagonFlip>
+                        <Hexagon height={260} stroke='#0D81FD' strokeWidth={5} radius={2}>
+                          <Image src='https://media-exp1.licdn.com/dms/image/C4D03AQFzybrlnU6Ksg/profile-displayphoto-shrink_800_800/0/1625140277780?e=1631145600&v=beta&t=tV7kpDoI288NTvSf8BpMy_wNL5fYMgGAxLbbUzezP14' alt='cto' layout='fill' />
+                        </Hexagon>
+                        <Hexagon height={260} stroke='#0D81FD' strokeWidth={5} radius={2}>
+                          <Typography variant='h4' align='center'>
+                            Prashant Katiyar
+                          </Typography>
+                          <Typography variant='subtitle' align='center'>
+                            Founder and CEO
+                          </Typography>
+                        </Hexagon>
+                      </HexagonFlip> 
+                    </Link> 
                   </Grid>
                   <Grid item>
-                    <HexagonFlip>
-                      <Hexagon height={260} stroke='#0D81FD' strokeWidth={5} radius={2}>
-                        <Image src='https://media-exp1.licdn.com/dms/image/C4D03AQFzybrlnU6Ksg/profile-displayphoto-shrink_800_800/0/1625140277780?e=1631145600&v=beta&t=tV7kpDoI288NTvSf8BpMy_wNL5fYMgGAxLbbUzezP14' alt='cto' layout='fill' />
-                      </Hexagon>
-                      <Hexagon height={260} stroke='#0D81FD' strokeWidth={5} radius={2}>
-                        <Typography variant='h4' align='center'>
-                          Prashant Katiyar
-                        </Typography>
-                        <Typography variant='subtitle' align='center'>
-                          Founder and CEO
-                        </Typography>
-                      </Hexagon>
-                    </HexagonFlip>  
+                    <Link href='https://www.linkedin.com/in/tejas-agrawal-1605301a5/' color='inherit'>
+                      <HexagonFlip>
+                        <Hexagon height={260} stroke='#0D81FD' strokeWidth={5} radius={2}>
+                          <Image src='https://media-exp1.licdn.com/dms/image/C4E03AQFdayrGucPUIg/profile-displayphoto-shrink_800_800/0/1624708297738?e=1631145600&v=beta&t=UKHmuyrxFF8e3B-HUZoc1594i-_L9fXLV3AvaDvVvEM' alt='cto' layout='fill' />
+                        </Hexagon>
+                        <Hexagon height={260} stroke='#0D81FD' strokeWidth={5} radius={2}>
+                          <Typography variant='h4' align='center'>
+                            Tejas Agrawal
+                          </Typography>
+                          <Typography variant='subtitle' align='center'>
+                            Co-Founder and CTO
+                          </Typography>
+                        </Hexagon>
+                      </HexagonFlip>
+                    </Link>
                   </Grid>
                   <Grid item>
-                    <HexagonFlip>
-                      <Hexagon height={260} stroke='#0D81FD' strokeWidth={5} radius={2}>
-                        <Image src='https://media-exp1.licdn.com/dms/image/C5103AQHn2K6skVzaUA/profile-displayphoto-shrink_800_800/0/1566123843552?e=1631145600&v=beta&t=71nvLaBUA8AYesir5b7vY1flS81Am0vu9Y1vYU7Q_Zo' alt='cto' layout='fill' />
-                      </Hexagon>
-                      <Hexagon height={260} stroke='#0D81FD' strokeWidth={5} radius={2}>
-                        <Typography variant='h4' align='center'>
-                          Raghav Agrawal
-                        </Typography>
-                        <Typography variant='subtitle' align='center'>
-                          ML Operations Lead
-                        </Typography>
-                      </Hexagon>
-                    </HexagonFlip>  
+                    <Link href='https://www.linkedin.com/in/raghav1701/' color='inherit'>
+                      <HexagonFlip>
+                        <Hexagon height={260} stroke='#0D81FD' strokeWidth={5} radius={2}>
+                          <Image src='https://media-exp1.licdn.com/dms/image/C5103AQHn2K6skVzaUA/profile-displayphoto-shrink_800_800/0/1566123843552?e=1631145600&v=beta&t=71nvLaBUA8AYesir5b7vY1flS81Am0vu9Y1vYU7Q_Zo' alt='cto' layout='fill' />
+                        </Hexagon>
+                        <Hexagon height={260} stroke='#0D81FD' strokeWidth={5} radius={2}>
+                          <Typography variant='h4' align='center'>
+                            Raghav Agrawal
+                          </Typography>
+                          <Typography variant='subtitle' align='center'>
+                            ML Operations Lead
+                          </Typography>
+                        </Hexagon>
+                      </HexagonFlip>
+                    </Link>  
                   </Grid>
                   <Grid item>
-                    <HexagonFlip>
-                      <Hexagon height={260} stroke='#0D81FD' strokeWidth={5} radius={2}>
-                        <Image src='https://media-exp1.licdn.com/dms/image/C4D03AQE6_9jxAspBSw/profile-displayphoto-shrink_800_800/0/1605426371490?e=1631145600&v=beta&t=cSZD5ermj_4hcTASSx-OT3klwFAo_xEPvwoSS6zk1vM' alt='coo' layout='fill' />
-                      </Hexagon>
-                      <Hexagon height={260} stroke='#0D81FD' strokeWidth={5} radius={2}>
-                        <Typography variant='h4' align='center'>
-                          Achalesh Lakhotiya
-                        </Typography>
-                        <Typography variant='subtitle' align='center'>
-                          Co-Founder and COO
-                        </Typography>
-                      </Hexagon>
-                    </HexagonFlip> 
+                    <Link href='https://www.linkedin.com/in/achal2702/' color='inherit'>
+                      <HexagonFlip>
+                        <Hexagon height={260} stroke='#0D81FD' strokeWidth={5} radius={2}>
+                          <Image src='https://media-exp1.licdn.com/dms/image/C4D03AQE6_9jxAspBSw/profile-displayphoto-shrink_800_800/0/1605426371490?e=1631145600&v=beta&t=cSZD5ermj_4hcTASSx-OT3klwFAo_xEPvwoSS6zk1vM' alt='coo' layout='fill' />
+                        </Hexagon>
+                        <Hexagon height={260} stroke='#0D81FD' strokeWidth={5} radius={2}>
+                          <Typography variant='h4' align='center'>
+                            Achalesh Lakhotiya
+                          </Typography>
+                          <Typography variant='subtitle' align='center'>
+                            Co-Founder and COO
+                          </Typography>
+                        </Hexagon>
+                      </HexagonFlip>
+                    </Link> 
                   </Grid>
                 </Grid>
               </Grid>
@@ -266,56 +282,65 @@ export default function Home() {
               <Grid item>
                 <Grid container direction='row' alignItems='center' justify='center' spacing={4}>
                   <Grid item>
-                    <HexagonFlip>
-                      <Hexagon height={260} stroke='#0D81FD' strokeWidth={5} radius={2}>
-                        <Image src='https://media-exp1.licdn.com/dms/image/C5603AQH7K9m6M5KowA/profile-displayphoto-shrink_800_800/0/1589383404605?e=1631145600&v=beta&t=FH9lMX4MrTyq0a6VhiU9PGN-sKRiZzsaRdiLKiTIU-c' alt='cto' layout='fill' />
-                      </Hexagon>
-                      <Hexagon height={260} stroke='#0D81FD' strokeWidth={5} radius={2}>
-                        <Typography variant='h4' align='center'>
-                          Shubhendra Vikram
-                        </Typography>
-                        <Typography variant='subtitle' align='center'>
-                          Founder and CEO @Hapramp Studios
-                        </Typography>
-                      </Hexagon>
-                    </HexagonFlip>
+                    <Link href='https://www.linkedin.com/in/shubhendravikram/' color='inherit'>
+                      <HexagonFlip>
+                        <Hexagon height={260} stroke='#0D81FD' strokeWidth={5} radius={2}>
+                          <Image src='https://media-exp1.licdn.com/dms/image/C5603AQH7K9m6M5KowA/profile-displayphoto-shrink_800_800/0/1589383404605?e=1631145600&v=beta&t=FH9lMX4MrTyq0a6VhiU9PGN-sKRiZzsaRdiLKiTIU-c' alt='cto' layout='fill' />
+                        </Hexagon>
+                        <Hexagon height={260} stroke='#0D81FD' strokeWidth={5} radius={2}>
+                          <Typography variant='h4' align='center'>
+                            Shubhendra Vikram
+                          </Typography>
+                          <Typography variant='subtitle' align='center'>
+                            Founder and CEO @Hapramp Studios
+                          </Typography>
+                        </Hexagon>
+                      </HexagonFlip>
+                    </Link>
                   </Grid>
                   <Grid item>
-                    <HexagonFlip>
-                      <Hexagon height={260} stroke='#0D81FD' strokeWidth={5} radius={2}>
-                        <Image src='https://media-exp1.licdn.com/dms/image/C5103AQGpba-LakWJpA/profile-displayphoto-shrink_800_800/0/1517456536289?e=1631145600&v=beta&t=WHicb4bJLxb3grNIH4USXMvQosloYCJdESbecTsUWzY' alt='cto' layout='fill' />
-                      </Hexagon>
-                      <Hexagon height={260} stroke='#0D81FD' strokeWidth={5} radius={2}>
-                        <Typography variant='h4' align='center'>
-                          Pratyush Singh
-                        </Typography>
-                        <Typography variant='subtitle' align='center'>
-                          Co-Founder and CTO @Hapramp Studios
-                        </Typography>
-                      </Hexagon>
-                    </HexagonFlip>  
-                  </Grid>
+                    <Link href='https://www.linkedin.com/in/singh-pratyush/' color='inherit'>
+                      <HexagonFlip>
+                        <Hexagon height={260} stroke='#0D81FD' strokeWidth={5} radius={2}>
+                          <Image src='https://media-exp1.licdn.com/dms/image/C5103AQGpba-LakWJpA/profile-displayphoto-shrink_800_800/0/1517456536289?e=1631145600&v=beta&t=WHicb4bJLxb3grNIH4USXMvQosloYCJdESbecTsUWzY' alt='cto' layout='fill' />
+                        </Hexagon>
+                        <Hexagon height={260} stroke='#0D81FD' strokeWidth={5} radius={2}>
+                          <Typography variant='h4' align='center'>
+                            Pratyush Singh
+                          </Typography>
+                          <Typography variant='subtitle' align='center'>
+                            Co-Founder and CTO @Hapramp Studios
+                          </Typography>
+                        </Hexagon>
+                      </HexagonFlip>  
+                    </Link>  
+                  </Grid> 
                   <Grid item>
-                    <HexagonFlip>
-                      <Hexagon height={260} stroke='#0D81FD' strokeWidth={5} radius={2}>
-                        <Image src='https://media-exp1.licdn.com/dms/image/C4E03AQGHsKLM5X22Dg/profile-displayphoto-shrink_800_800/0/1615981849271?e=1631145600&v=beta&t=mdkdrMb8d13L6hySeopj6_SKng0yfheEkrMdI5dgg_U' alt='cto' layout='fill' />
-                      </Hexagon>
-                      <Hexagon height={260} stroke='#0D81FD' strokeWidth={5} radius={2}>
-                        <Typography variant='h4' align='center'>
-                          Rajat Dangi
-                        </Typography>
-                        <Typography variant='subtitle' align='center'>
-                          Brand Strategist @Hapramp Studios
-                        </Typography>
-                      </Hexagon>
-                    </HexagonFlip>  
+                    <Link href='https://www.linkedin.com/in/rajatdangi/' color='inherit'>
+                      <HexagonFlip>
+                        <Hexagon height={260} stroke='#0D81FD' strokeWidth={5} radius={2}>
+                          <Image src='https://media-exp1.licdn.com/dms/image/C4E03AQGHsKLM5X22Dg/profile-displayphoto-shrink_800_800/0/1615981849271?e=1631145600&v=beta&t=mdkdrMb8d13L6hySeopj6_SKng0yfheEkrMdI5dgg_U' alt='cto' layout='fill' />
+                        </Hexagon>
+                        <Hexagon height={260} stroke='#0D81FD' strokeWidth={5} radius={2}>
+                          <Typography variant='h4' align='center'>
+                            Rajat Dangi
+                          </Typography>
+                          <Typography variant='subtitle' align='center'>
+                            Brand Strategist @Hapramp Studios
+                          </Typography>
+                        </Hexagon>
+                      </HexagonFlip>
+                    </Link>  
                   </Grid>
                 </Grid>
               </Grid>
             </Grid>
           </Grid>
         </Grid>
+        <br />
       </Container>
+      <br />
+      <Footer />
     </div>
   );
 }
