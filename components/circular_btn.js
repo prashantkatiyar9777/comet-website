@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => {
 const CircleButton = (props) => {
     const classes = useStyles();
     return (
-        <ButtonBase>
+        <ButtonBase type={props.submitType ? 'submit' : undefined } onClick={props.clickAction}>
             <div className={classes.circle}>
                 {props.children}
             </div>

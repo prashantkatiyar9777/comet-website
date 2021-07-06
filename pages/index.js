@@ -3,13 +3,6 @@ import TextField from '@material-ui/core/TextField';
 import Link from '@material-ui/core/Link';
 import { Play } from 'react-feather';
 import orbit from '../public/orbit.png';
-import iedc from '../public/iedc.png';
-import edii from '../public/edii.png';
-import dst from '../public/dst.png';
-import nstedb from '../public/nstedb.jpg';
-import iit from '../public/iit.png';
-import nit from '../public/nit.png';
-import iiit from '../public/iiit.png';
 import Hidden from '@material-ui/core/Hidden';
 import Hexagon from 'react-svg-hexagon'
 import HexagonFlip from 'react-svg-hexagon-flip';
@@ -20,8 +13,15 @@ import CircleButton from '../components/circular_btn';
 import FormHelperText from '@material-ui/core/FormHelperText';
 import FormControl from '@material-ui/core/FormControl';
 import { makeStyles } from '@material-ui/core/styles';
+import { useRef, useState } from 'react';
 import Navbar from '../components/navbar';
+import Button from '@material-ui/core/Button';
 import Footer from '../components/footer';
+import Dialog from '@material-ui/core/Dialog';
+import DialogTitle from '@material-ui/core/DialogTitle';
+import DialogActions from '@material-ui/core/DialogActions';
+import DialogContent from '@material-ui/core/DialogContent';
+import DialogContentText from '@material-ui/core/DialogContentText';
 
 const useStyles = makeStyles((theme) => {
   return {
@@ -70,10 +70,41 @@ const useStyles = makeStyles((theme) => {
 
 export default function Home() {
   const classes = useStyles();
+  const [email, setEmail] = useState('');
+  const [error, setError] = useState(false);
+  const visionRef = useRef(null);
+  const communityRef = useRef(null);
+  const teamRef = useRef(null);
+  const scrollToRef = (ref) => {
+    window.scrollTo({ top: ref.current.offsetTop , behavior: 'smooth'});
+  }
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    if(regex.test(email) === false){
+      setError(true);
+      return ;
+    } else {
+      console.log(email);
+    }
+  }
+  const handleClose = () => {
+    setError(false)
+  }
   return (
     <div>
       <Container maxWidth='lg'>
-        <Navbar />
+        <Navbar 
+        visionScroll={() => {
+          scrollToRef(visionRef);
+        }} 
+        communityScroll={() => {
+          scrollToRef(communityRef);
+        }}
+        teamScroll={() => {
+          scrollToRef(teamRef);
+        }}
+        />
         <br />
         <Grid container direction='column' justify='center' alignItems='center' spacing={10}>
           <Grid item>
@@ -91,31 +122,33 @@ export default function Home() {
                     </Typography>
                   </Grid>
                   <Grid item className={classes.textBox}>
+                  <form noValidate autoComplete='off' onSubmit={handleSubmit}>
                     <FormControl fullWidth>
-                      <Grid container direction='row' spacing={3} justify='flex-start' alignItems="center">
-                        <Grid item xs={12} sm={12} xl={6}>
-                          <Typography variant="body1" display="block" gutterBottom color='primary'>
-                            Join Us
-                          </Typography>
-                          <TextField fullWidth variant='outlined' label='Email'/>
-                          <FormHelperText className={classes.helperText}>We will be right back to you</FormHelperText>
-                        </Grid>
-                        <Grid item xs={12} sm={12} md={12} lg={12} xl={6}>
-                          <Hidden xsDown smDown mdDown lgDown implementation='css'>
-                            <CircleButton>
-                              <Play color='#0D81FD'/>
-                            </CircleButton>
-                          </Hidden>
-                          <Hidden xlUp implementation='css'>
-                            <center>
-                              <CircleButton>
+                        <Grid container direction='row' spacing={3} justify='flex-start' alignItems="center">
+                          <Grid item xs={12} sm={12} xl={6}>
+                            <Typography variant="body1" display="block" gutterBottom color='primary'>
+                              Join Us
+                            </Typography>
+                            <TextField fullWidth onChange={(e) => {setEmail(e.target.value)}} variant='outlined' label='Email'/>
+                            <FormHelperText className={classes.helperText}>We will be right back to you</FormHelperText>
+                          </Grid>
+                          <Grid item xs={12} sm={12} md={12} lg={12} xl={6}>
+                            <Hidden xsDown smDown mdDown lgDown implementation='css'>
+                              <CircleButton submitType={true}>
                                 <Play color='#0D81FD'/>
                               </CircleButton>
-                            </center>
-                          </Hidden>
-                        </Grid>
-                      </Grid>  
-                    </FormControl>
+                            </Hidden>
+                            <Hidden xlUp implementation='css'>
+                              <center>
+                                <CircleButton type='submit'>
+                                  <Play color='#0D81FD'/>
+                                </CircleButton>
+                              </center>
+                            </Hidden>
+                          </Grid>
+                        </Grid>  
+                      </FormControl>
+                    </form>
                   </Grid>
                 </Grid>
               </Grid>
@@ -125,7 +158,7 @@ export default function Home() {
               </Grid>
             </Grid>
           </Grid>
-          <Grid item>
+          <Grid item ref={visionRef}>
             <Grid container direction='column' alignItems='center' justify='center' spacing={3}> 
               <Grid item>
                 <Typography variant='h3' color='primary'>
@@ -152,7 +185,7 @@ export default function Home() {
                   Incubated by
                 </Typography>
                 <br />
-                <Image src={iedc} alt='orbit' width={277} height={110}/>
+                <Image src='/iedc.png' alt='orbit' width={277} height={110}/>
               </Grid>
               <Grid item>
                 <Typography variant='h5' align='center'>
@@ -161,41 +194,42 @@ export default function Home() {
                 <br />
                 <Grid container direction='row' alignItems='center' justify='center' spacing={10}>
                   <Grid item>
-                    <Image src={edii} alt='orbit' width={177} height={150}/>
+                    <Image src='/edii.png' alt='orbit' width={177} height={150}/>
                   </Grid>
                   <Grid item>
-                    <Image src={dst} alt='orbit' width={177} height={150}/>
+                    <Image src='/dst.png' alt='orbit' width={177} height={150}/>
                   </Grid>
                   <Grid item>
-                    <Image src={nstedb} alt='orbit' width={177} height={150}/>
+                    <Image src='/nstedb.jpg' alt='orbit' width={177} height={150}/>
                   </Grid>
                 </Grid>
               </Grid>
             </Grid>
           </Grid>
-          <Grid item>
+          <Grid item ref={communityRef}>
             <Grid container direction='column' alignItems='center' justify='center' spacing={5}>
               <Grid item>
                 <Typography variant='h3' color='primary' align='center'>
                   Community Support
                 </Typography>
               </Grid>
+              <br />
               <Grid item>
                 <Grid container direction='row' alignItems='center' justify='center' spacing={10}>
                   <Grid item>
-                    <Image src={iit} alt='orbit' width={177} height={97}/>
+                    <Image src='/iit.png' alt='orbit' width={177} height={97}/>
                   </Grid>
                   <Grid item>
-                    <Image src={nit} alt='orbit' width={177} height={97}/>
+                    <Image src='/nit.png' alt='orbit' width={177} height={97}/>
                   </Grid>
                   <Grid item>
-                    <Image src={iiit} alt='orbit' width={177} height={97}/>
+                    <Image src='/iiit.png' alt='orbit' width={177} height={97}/>
                   </Grid>
                 </Grid>
               </Grid>
             </Grid>
           </Grid>
-          <Grid item>
+          <Grid item ref={teamRef}>
             <Grid container direction='column' alignItems='center' justify='center' spacing={5}>
               <Grid item>
                 <Typography variant='h3' color='primary'>
@@ -214,7 +248,7 @@ export default function Home() {
                           <Typography variant='h4' align='center'>
                             Prashant Katiyar
                           </Typography>
-                          <Typography variant='subtitle' align='center'>
+                          <Typography variant='subtitle1' align='center'>
                             Founder and CEO
                           </Typography>
                         </Hexagon>
@@ -231,7 +265,7 @@ export default function Home() {
                           <Typography variant='h4' align='center'>
                             Tejas Agrawal
                           </Typography>
-                          <Typography variant='subtitle' align='center'>
+                          <Typography variant='subtitle1' align='center'>
                             Co-Founder and CTO
                           </Typography>
                         </Hexagon>
@@ -248,7 +282,7 @@ export default function Home() {
                           <Typography variant='h4' align='center'>
                             Raghav Agrawal
                           </Typography>
-                          <Typography variant='subtitle' align='center'>
+                          <Typography variant='subtitle1' align='center'>
                             ML Operations Lead
                           </Typography>
                         </Hexagon>
@@ -265,7 +299,7 @@ export default function Home() {
                           <Typography variant='h4' align='center'>
                             Achalesh Lakhotiya
                           </Typography>
-                          <Typography variant='subtitle' align='center'>
+                          <Typography variant='subtitle1' align='center'>
                             Co-Founder and COO
                           </Typography>
                         </Hexagon>
@@ -291,7 +325,7 @@ export default function Home() {
                           <Typography variant='h4' align='center'>
                             Shubhendra Vikram
                           </Typography>
-                          <Typography variant='subtitle' align='center'>
+                          <Typography variant='subtitle1' align='center'>
                             Founder and CEO @Hapramp Studios
                           </Typography>
                         </Hexagon>
@@ -308,7 +342,7 @@ export default function Home() {
                           <Typography variant='h4' align='center'>
                             Pratyush Singh
                           </Typography>
-                          <Typography variant='subtitle' align='center'>
+                          <Typography variant='subtitle1' align='center'>
                             Co-Founder and CTO @Hapramp Studios
                           </Typography>
                         </Hexagon>
@@ -325,7 +359,7 @@ export default function Home() {
                           <Typography variant='h4' align='center'>
                             Rajat Dangi
                           </Typography>
-                          <Typography variant='subtitle' align='center'>
+                          <Typography variant='subtitle1' align='center'>
                             Brand Strategist @Hapramp Studios
                           </Typography>
                         </Hexagon>
@@ -337,6 +371,24 @@ export default function Home() {
             </Grid>
           </Grid>
         </Grid>
+        <Dialog
+        open={error}
+        onClose={handleClose}
+        aria-labelledby="alert-dialog-title"
+        aria-describedby="alert-dialog-description"
+      >
+        <DialogTitle id="alert-dialog-title">Invalid Email Given</DialogTitle>
+        <DialogContent>
+          <DialogContentText id="alert-dialog-description">
+            You are trying to give an invalid email. Please use a valid email id to register for our newsletter.
+          </DialogContentText>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleClose} color="secondary">
+            Ok
+          </Button>
+        </DialogActions>
+      </Dialog>
         <br />
       </Container>
       <br />
