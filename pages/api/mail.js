@@ -3,7 +3,7 @@ const mail = require('@sendgrid/mail');
 
 mail.setApiKey(process.env.SENDGRID_API_KEY);
 
-export default function handler(req, res) {
+export default async function handler(req, res) {
   const body = JSON.parse(req.body);
   console.log(body);
   const message = `Hi there,\r\n Greetings from COMETLABS.\r\n Thanks for subscribing our newsletter.\r\n`;
@@ -15,6 +15,6 @@ export default function handler(req, res) {
     message: message,
     html: message.replace(/\r\n/g , '<br>')
   }
-  mail.send(data);
-  res.status(200).json({ status: 'OK' })
+  await mail.send(data);
+  res.status(200).json({ status: 'OK' });
 }
