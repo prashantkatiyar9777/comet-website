@@ -89,9 +89,8 @@ export default function Home() {
       fetch('/api/mail' , {
         method: 'post',
         body: JSON.stringify(email),
-
       });
-      console.log(email);
+      console.log(JSON.stringify(email));
     }
   }
   
@@ -147,7 +146,7 @@ export default function Home() {
                             </Hidden>
                             <Hidden xlUp implementation='css'>
                               <center>
-                                <CircleButton type='submit'>
+                                <CircleButton submitType={true}>
                                   <Play color='#0D81FD'/>
                                 </CircleButton>
                               </center>
