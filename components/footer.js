@@ -5,6 +5,7 @@ import {Linkedin, Twitter, Instagram, Facebook } from 'react-feather';
 import { makeStyles } from '@material-ui/core/styles';
 import Image from 'next/image';
 import Link from '@material-ui/core/Link';
+import NextLink from 'next/link';
 
 const useStyles = makeStyles((theme) => {
     return {
@@ -69,32 +70,48 @@ const Footer = () => {
               </Grid>
             </Grid>
             <Grid item>
-              <Typography variant='body1' className={classes.footerText}>
-                About
-              </Typography>
-              <Typography variant='body1' className={classes.footerText}>
-                Blog
-              </Typography>
-              <Typography variant='body1' className={classes.footerText}>
-                Refund Policy
-              </Typography>
-              <Typography variant='body1' className={classes.footerText}>
-                Careers
-              </Typography>
+              <NextLink href='/about'>
+                <Typography variant='body1' className={classes.footerText}>
+                  About
+                </Typography>
+              </NextLink>
+              <NextLink href='/blog'>
+                <Typography variant='body1' className={classes.footerText}>
+                  Blog
+                </Typography>
+              </NextLink>
+              <NextLink href='/refund'>
+                <Typography variant='body1' className={classes.footerText}>
+                  Refund Policy
+                </Typography>
+              </NextLink>
+              <NextLink href='/careers'>
+                <Typography variant='body1' className={classes.footerText}>
+                  Careers
+                </Typography>
+              </NextLink>
             </Grid>
             <Grid item>
-              <Typography variant='body1' className={classes.footerText}>
-                Help
-              </Typography>
-              <Typography variant='body1' className={classes.footerText}>
-                Privacy Policy
-              </Typography>
-              <Typography variant='body1' className={classes.footerText}>
-                Code of Conduct
-              </Typography>
-              <Typography variant='body1' className={classes.footerText}>
-                Contact Us
-              </Typography>
+              <NextLink href='/help'>
+                <Typography variant='body1' className={classes.footerText}>
+                  Help
+                </Typography>
+              </NextLink>
+              <NextLink href='/privacy-policy'>
+                <Typography variant='body1' className={classes.footerText}>
+                  Privacy Policy
+                </Typography>
+              </NextLink>
+              <NextLink href='/code-of-conduct'>
+                <Typography variant='body1' className={classes.footerText}>
+                  Code of Conduct
+                </Typography>
+              </NextLink>
+              <NextLink href='/contact-us'>
+                <Typography variant='body1' className={classes.footerText}>
+                  Contact Us
+                </Typography>
+              </NextLink>
             </Grid>
           </Grid>
           <br />

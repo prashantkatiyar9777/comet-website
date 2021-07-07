@@ -12,6 +12,7 @@ import * as Icon from 'react-feather';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import Fade from '@material-ui/core/Fade';
+import { useRouter } from 'next/router';
 
 const useStyles = makeStyles((theme) => ({
     menuButton: {
@@ -35,13 +36,15 @@ const NavBar = (props) => {
     const handleClose = () => {
       setStatus(null);
     }
-
+    const router = useRouter();
     const classes = useStyles();
     return (
     <div>
         <AppBar position="static" color='transparent' elevation={0}>
           <Toolbar>
-            <Image src='/logo_comet.png' alt='Logo' width={143.01} height={50} />
+            <Image onClick={() => {
+              router.push('/');
+            }} src='/logo_comet.png' alt='Logo' width={143.01} height={50} />
             <Typography variant="h6" className={classes.title} align='right'> 
               <Hidden xsDown implementation='css'>
                 <Link onClick={props.visionScroll} color='inherit'>Vision</Link>
@@ -58,7 +61,9 @@ const NavBar = (props) => {
               </Hidden>
             </Typography>
             <Hidden xsDown implementation='css'>
-              <Button color='primary' size='large'>
+              <Button onClick={() => {
+                router.push('/join');
+              }} color='primary' size='large'>
                 Join COMET
               </Button>
             </Hidden>

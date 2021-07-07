@@ -159,7 +159,7 @@ export default function Home() {
                 </Grid>
               </Grid>
               <br />
-              <Grid item lg={6} md={6} xd={12}>
+              <Grid item lg={6} md={6} xl={6}>
                 <Image src={orbit} alt='orbit' width={568.94} height={581}/>
               </Grid>
             </Grid>
