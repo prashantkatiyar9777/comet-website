@@ -78,6 +78,7 @@ export default function Home() {
   const scrollToRef = (ref) => {
     window.scrollTo({ top: ref.current.offsetTop , behavior: 'smooth'});
   }
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
@@ -85,9 +86,15 @@ export default function Home() {
       setError(true);
       return ;
     } else {
+      fetch('/api/mail' , {
+        method: 'post',
+        body: JSON.stringify(email),
+
+      });
       console.log(email);
     }
   }
+  
   const handleClose = () => {
     setError(false)
   }
