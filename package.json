@@ -15,7 +15,8 @@
     "react-dom": "17.0.2",
     "react-feather": "^2.0.9",
     "react-svg-hexagon": "^1.0.0",
-    "react-svg-hexagon-flip": "^1.0.1"
+    "react-svg-hexagon-flip": "^1.0.1",
+    "styled-components": "^4.4.1"
   },
   "devDependencies": {
     "babel-plugin-inline-react-svg": "^2.0.1",
