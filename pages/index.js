@@ -302,6 +302,13 @@ export default function Home() {
                   </Grid>
                 </Grid>
               </Grid>
+              <br />
+              <Grid item>
+                <Typography variant="h5" align="center">
+                  Recognised under
+                </Typography>
+                <Image src="/SIL.svg" alt="orbit" width={277} height={110} />
+              </Grid>
             </Grid>
           </Grid>
           <Grid item ref={communityRef}>
