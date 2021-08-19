@@ -262,7 +262,9 @@ export default function Home() {
                   Incubated by
                 </Typography>
                 <br />
-                <Image src="/iedc.png" alt="orbit" width={277} height={110} />
+                <Link href="https://newgeniedc.iiita.ac.in/" color="inherit">
+                  <Image src="/iedc.png" alt="orbit" width={277} height={110} />
+                </Link>
               </Grid>
               <Grid item>
                 <Typography variant="h5" align="center">
@@ -277,28 +279,37 @@ export default function Home() {
                   spacing={10}
                 >
                   <Grid item>
-                    <Image
-                      src="/edii.png"
-                      alt="orbit"
-                      width={177}
-                      height={150}
-                    />
+                    <Link href="https://ediindia.ac.in/" color="inherit">
+                      <Image
+                        src="/edii.png"
+                        alt="orbit"
+                        width={177}
+                        height={150}
+                      />
+                    </Link>
                   </Grid>
                   <Grid item>
-                    <Image
-                      src="/dst.png"
-                      alt="orbit"
-                      width={177}
-                      height={150}
-                    />
+                    <Link href="https://dst.gov.in/" color="inherit">
+                      <Image
+                        src="/dst.png"
+                        alt="orbit"
+                        width={177}
+                        height={150}
+                      />
+                    </Link>
                   </Grid>
                   <Grid item>
-                    <Image
-                      src="/nstedb.jpg"
-                      alt="orbit"
-                      width={177}
-                      height={150}
-                    />
+                    <Link
+                      href="https://https://www.nstedb.com/"
+                      color="inherit"
+                    >
+                      <Image
+                        src="/nstedb.jpg"
+                        alt="orbit"
+                        width={177}
+                        height={150}
+                      />
+                    </Link>
                   </Grid>
                 </Grid>
               </Grid>
@@ -307,7 +318,38 @@ export default function Home() {
                 <Typography variant="h5" align="center">
                   Recognised under
                 </Typography>
-                <Image src="/SIL.svg" alt="orbit" width={277} height={110} />
+                <br />
+                <Grid
+                  container
+                  direction="row"
+                  alignItems="center"
+                  justify="center"
+                  spacing={10}
+                >
+                  <Grid item>
+                    <Link
+                      href="https://www.startupindia.gov.in/"
+                      color="inherit"
+                    >
+                      <Image
+                        src="/SIL.svg"
+                        alt="orbit"
+                        width={277}
+                        height={110}
+                      />
+                    </Link>
+                  </Grid>
+                  <Grid item>
+                    <Link href="https://dpiit.gov.in/" color="inherit">
+                      <Image
+                        src="/Emblem.jpeg"
+                        alt="orbit"
+                        width={230}
+                        height={180}
+                      />
+                    </Link>
+                  </Grid>
+                </Grid>
               </Grid>
             </Grid>
           </Grid>
@@ -406,40 +448,7 @@ export default function Home() {
                       </HexagonFlip>
                     </Link>
                   </Grid>
-                  <Grid item>
-                    <Link
-                      href="https://www.linkedin.com/in/tejas-agrawal-1605301a5/"
-                      color="inherit"
-                    >
-                      <HexagonFlip>
-                        <Hexagon
-                          height={260}
-                          stroke="#0D81FD"
-                          strokeWidth={5}
-                          radius={2}
-                        >
-                          <Image
-                            src="https://media-exp1.licdn.com/dms/image/C4E03AQFdayrGucPUIg/profile-displayphoto-shrink_800_800/0/1624708297738?e=1631145600&v=beta&t=UKHmuyrxFF8e3B-HUZoc1594i-_L9fXLV3AvaDvVvEM"
-                            alt="cto"
-                            layout="fill"
-                          />
-                        </Hexagon>
-                        <Hexagon
-                          height={260}
-                          stroke="#0D81FD"
-                          strokeWidth={5}
-                          radius={2}
-                        >
-                          <Typography variant="h4" align="center">
-                            Tejas Agrawal
-                          </Typography>
-                          <Typography variant="subtitle1" align="center">
-                            Co-Founder and CTO
-                          </Typography>
-                        </Hexagon>
-                      </HexagonFlip>
-                    </Link>
-                  </Grid>
+
                   <Grid item>
                     <Link
                       href="https://www.linkedin.com/in/raghav1701/"
@@ -487,11 +496,12 @@ export default function Home() {
                           radius={2}
                         >
                           <Image
-                            src="https://media-exp1.licdn.com/dms/image/C4D03AQE6_9jxAspBSw/profile-displayphoto-shrink_800_800/0/1605426371490?e=1631145600&v=beta&t=cSZD5ermj_4hcTASSx-OT3klwFAo_xEPvwoSS6zk1vM"
+                            src="https://media-exp1.licdn.com/dms/image/C4D03AQEKYIiugjEdPg/profile-displayphoto-shrink_800_800/0/1627793937725?e=1634774400&v=beta&t=GQ9nKduGOeyhDUVXv9v3O64Zi_5M9P1BNc6ADgJRAko"
                             alt="coo"
                             layout="fill"
                           />
                         </Hexagon>
+
                         <Hexagon
                           height={260}
                           stroke="#0D81FD"
