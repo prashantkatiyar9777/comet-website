@@ -542,7 +542,7 @@ export default function Home() {
                           radius={2}
                         >
                           <Image
-                            src="https://media-exp1.licdn.com/dms/image/C4D03AQFzybrlnU6Ksg/profile-displayphoto-shrink_800_800/0/1625140277780?e=1631145600&v=beta&t=tV7kpDoI288NTvSf8BpMy_wNL5fYMgGAxLbbUzezP14"
+                            src="https://media-exp1.licdn.com/dms/image/C4D03AQFzybrlnU6Ksg/profile-displayphoto-shrink_400_400/0/1625140277780?e=1639008000&v=beta&t=jZyb9Xxo1vkdSrQ6cHuqevKMH85XWQx26fzDCt_r4y8"
                             alt="cto"
                             layout="fill"
                           />
@@ -577,7 +577,7 @@ export default function Home() {
                           radius={2}
                         >
                           <Image
-                            src="https://media-exp1.licdn.com/dms/image/C5103AQHn2K6skVzaUA/profile-displayphoto-shrink_800_800/0/1566123843552?e=1631145600&v=beta&t=71nvLaBUA8AYesir5b7vY1flS81Am0vu9Y1vYU7Q_Zo"
+                            src="https://media-exp1.licdn.com/dms/image/C5103AQHn2K6skVzaUA/profile-displayphoto-shrink_800_800/0/1566123843552?e=1639008000&v=beta&t=86LWSyZVDoDeHo86xdD1NjutxToIRnFQTpVr8mhQedI"
                             alt="cto"
                             layout="fill"
                           />
@@ -659,7 +659,7 @@ export default function Home() {
                           radius={2}
                         >
                           <Image
-                            src="https://media-exp1.licdn.com/dms/image/C5603AQH7K9m6M5KowA/profile-displayphoto-shrink_800_800/0/1589383404605?e=1631145600&v=beta&t=FH9lMX4MrTyq0a6VhiU9PGN-sKRiZzsaRdiLKiTIU-c"
+                            src="https://media-exp1.licdn.com/dms/image/C5603AQH7K9m6M5KowA/profile-displayphoto-shrink_400_400/0/1589383404605?e=1639008000&v=beta&t=PxUQ_L-Ut2GxNkbqb9QMExERNj9evpI_4gTsWA_zZRw"
                             alt="cto"
                             layout="fill"
                           />
@@ -693,7 +693,7 @@ export default function Home() {
                           radius={2}
                         >
                           <Image
-                            src="https://media-exp1.licdn.com/dms/image/C5103AQGpba-LakWJpA/profile-displayphoto-shrink_800_800/0/1517456536289?e=1631145600&v=beta&t=WHicb4bJLxb3grNIH4USXMvQosloYCJdESbecTsUWzY"
+                            src="https://media-exp1.licdn.com/dms/image/C5103AQGpba-LakWJpA/profile-displayphoto-shrink_400_400/0/1517456536289?e=1639008000&v=beta&t=in2GUImBsovxjGzTHSZuPcmBi6CPrirX1_f-fkfpYO0"
                             alt="cto"
                             layout="fill"
                           />
@@ -727,7 +727,7 @@ export default function Home() {
                           radius={2}
                         >
                           <Image
-                            src="https://media-exp1.licdn.com/dms/image/C4E03AQGHsKLM5X22Dg/profile-displayphoto-shrink_800_800/0/1615981849271?e=1631145600&v=beta&t=mdkdrMb8d13L6hySeopj6_SKng0yfheEkrMdI5dgg_U"
+                            src="https://media-exp1.licdn.com/dms/image/C4E03AQGHsKLM5X22Dg/profile-displayphoto-shrink_400_400/0/1615981849271?e=1639008000&v=beta&t=WoNEw5SAIJHkw6JqazgfwyypMxBbFYSJPUDw8SiNBUg"
                             alt="cto"
                             layout="fill"
                           />
