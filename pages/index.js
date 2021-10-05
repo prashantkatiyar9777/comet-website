@@ -391,6 +391,121 @@ export default function Home() {
                   </Grid>
                 </Grid>
               </Grid>
+              <br />
+              <br />
+              <Grid item>
+                <Typography variant="h3" color="primary" align="center">
+                  Brands that trusted us
+                </Typography>
+              </Grid>
+              <br />
+              <Grid item>
+                <Grid
+                  container
+                  direction="row"
+                  alignItems="center"
+                  justify="center"
+                  spacing={10}
+                >
+                  <Grid item>
+                    <Image
+                      src="/cuvette/fl.svg"
+                      alt="FL"
+                      width={50}
+                      height={50}
+                    />
+                  </Grid>
+                  <Grid item>
+                    <Image
+                      src="/cuvette/WAVE CONCEPT.png"
+                      alt="WAVE CONCEPT"
+                      width={50}
+                      height={50}
+                    />
+                  </Grid>
+                  <Grid item>
+                    <Image
+                      src="/cuvette/ONI.png"
+                      alt="ONI"
+                      width={50}
+                      height={50}
+                    />
+                  </Grid>
+                  <Grid item>
+                    <Image
+                      src="/cuvette/spyne.png"
+                      alt="SPYNE"
+                      width={50}
+                      height={50}
+                    />
+                  </Grid>
+                  <Grid item>
+                    <Image
+                      src="/cuvette/image 1469.png"
+                      alt="orbit"
+                      width={50}
+                      height={50}
+                    />
+                  </Grid>
+                  <br />
+                  <Grid item>
+                    <Image
+                      src="/cuvette/ZS.png"
+                      alt="orbit"
+                      width={50}
+                      height={50}
+                    />
+                  </Grid>
+                  <Grid item>
+                    <Image
+                      src="/cuvette/FINFLUX.png"
+                      alt="orbit"
+                      width={50}
+                      height={50}
+                    />
+                  </Grid>
+                  <Grid item>
+                    <Image
+                      src="/cuvette/VECTORISED AL.png"
+                      alt="orbit"
+                      width={50}
+                      height={50}
+                    />
+                  </Grid>
+                  <Grid item>
+                    <Image
+                      src="/cuvette/TGH TECH.png"
+                      alt="orbit"
+                      width={50}
+                      height={50}
+                    />
+                  </Grid>
+                  <Grid item>
+                    <Image
+                      src="/cuvette/interview.svg"
+                      alt="orbit"
+                      width={50}
+                      height={50}
+                    />
+                  </Grid>
+                  <Grid item>
+                    <Image
+                      src="/cuvette/FUNDFINA.png"
+                      alt="orbit"
+                      width={50}
+                      height={50}
+                    />
+                  </Grid>
+                  <Grid item>
+                    <Image
+                      src="/cuvette/M2P.svg"
+                      alt="orbit"
+                      width={50}
+                      height={50}
+                    />
+                  </Grid>
+                </Grid>
+              </Grid>
             </Grid>
           </Grid>
           <Grid item ref={teamRef}>
