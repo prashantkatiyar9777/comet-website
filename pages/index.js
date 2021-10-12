@@ -433,14 +433,6 @@ export default function Home() {
                   </Grid>
                   <Grid item>
                     <Image
-                      src="/cuvette/spyne.png"
-                      alt="SPYNE"
-                      width={50}
-                      height={50}
-                    />
-                  </Grid>
-                  <Grid item>
-                    <Image
                       src="/cuvette/image 1469.png"
                       alt="orbit"
                       width={50}
