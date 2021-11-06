@@ -442,6 +442,18 @@ export default function Home() {
                   </Grid>
                   <Grid item align="center">
                     <Image
+                      src="/cuvette/vysiontech.png"
+                      alt="vysion tech"
+                      width={120}
+                      height={50}
+                    />
+                    <Typography align="center" variant="body2">
+                      Vysion Technology
+                    </Typography>
+                  </Grid>
+
+                  <Grid item align="center">
+                    <Image
                       src="/cuvette/fl.svg"
                       alt="FL"
                       width={50}
@@ -560,39 +572,6 @@ export default function Home() {
                     />
                     <Typography align="center" variant="body2">
                       FUNDFINA
-                    </Typography>
-                  </Grid>
-                  <Grid item align="center">
-                    <Image
-                      src="/cuvette/vysiontech.png"
-                      alt="vysion tech"
-                      width={120}
-                      height={50}
-                    />
-                    <Typography align="center" variant="body2">
-                      Vysion Technology
-                    </Typography>
-                  </Grid>
-                  <Grid item align="center">
-                    <Image
-                      src="/cuvette/retailpulse.png"
-                      alt="retail pulse"
-                      width={120}
-                      height={50}
-                    />
-                    <Typography align="center" variant="body2">
-                      Retail Pulse.
-                    </Typography>
-                  </Grid>
-                  <Grid item align="center">
-                    <Image
-                      src="/cuvette/shubhwed.svg"
-                      alt="shubhwed"
-                      width={50}
-                      height={50}
-                    />
-                    <Typography align="center" variant="body2">
-                      Shubhwed
                     </Typography>
                   </Grid>
                   <Grid item align="center">

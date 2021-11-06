@@ -594,7 +594,6 @@ export default function Home() {
                     <Typography align="center" variant="body2">
                       Shubhwed
                     </Typography>
-                  </Grid>
                   <Grid item align="center">
                     <Image
                       src="/cuvette/M2P.svg"

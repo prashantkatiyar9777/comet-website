@@ -407,29 +407,25 @@ export default function Home() {
                   justify="center"
                   spacing={10}
                 >
-                  <Grid item align="center">
+                  <Grid item align="center" variant="body2">
                     <Image
                       src="/cuvette/krishinetwork.svg"
                       alt="Krishi Network"
                       width={150}
                       height={50}
                     />
-                    <Typography align="center" variant="body2">
-                      Krishi Network
-                    </Typography>
+                    <Typography align="center">Krishi Network</Typography>
                   </Grid>
-                  <Grid item align="center">
+                  <Grid item align="center" variant="body2">
                     <Image
                       src="/cuvette/beyondinnovation.jpg"
                       alt="beyond Innovation"
                       width={50}
                       height={50}
                     />
-                    <Typography align="center" variant="body2">
-                      Beyond Innovation
-                    </Typography>
+                    <Typography align="center">Beyond Innovation</Typography>
                   </Grid>
-                  <Grid item align="center">
+                  <Grid item align="center" variant="body2">
                     <Image
                       src="/cuvette/furballstory.jpeg"
                       alt="fur ball story"
@@ -440,171 +436,124 @@ export default function Home() {
                       Fur Ball Story
                     </Typography>
                   </Grid>
-                  <Grid item align="center">
-                    <Image
-                      src="/cuvette/fl.svg"
-                      alt="FL"
-                      width={50}
-                      height={50}
-                    />
-                    <Typography align="center" variant="body2">
-                      FL
-                    </Typography>
-                  </Grid>
-                  <Grid item align="center">
-                    <Image
-                      src="/cuvette/WAVE CONCEPT.png"
-                      alt="WAVE CONCEPT"
-                      width={50}
-                      height={50}
-                    />
-                    <Typography align="center" variant="body2">
-                      Wave Concept
-                    </Typography>
-                  </Grid>
-                  <Grid item align="center">
-                    <Image
-                      src="/cuvette/visionmagitech.png"
-                      alt="Magitech Innovation"
-                      width={50}
-                      height={50}
-                    />
-                    <Typography align="center" variant="body2">
-                      Magitech Innovation
-                    </Typography>
-                  </Grid>
-                  <Grid item align="center">
-                    <Image
-                      src="/cuvette/ONI.png"
-                      alt="ONI"
-                      width={50}
-                      height={50}
-                    />
-                    <Typography align="center" variant="body2">
-                      ONI
-                    </Typography>
-                  </Grid>
-                  <Grid item align="center">
-                    <Image
-                      src="/cuvette/image 1469.png"
-                      alt="orbit"
-                      width={50}
-                      height={50}
-                    />
-                    <Typography align="center" variant="body2">
-                      Orbit
-                    </Typography>
-                  </Grid>
-                  <br />
-                  <Grid item align="center">
-                    <Image
-                      src="/cuvette/ZS.png"
-                      alt="orbit"
-                      width={50}
-                      height={50}
-                    />
-                    <Typography align="center" variant="body2">
-                      ZS
-                    </Typography>
-                  </Grid>
-                  <Grid item align="center">
-                    <Image
-                      src="/cuvette/FINFLUX.png"
-                      alt="orbit"
-                      width={50}
-                      height={50}
-                    />
-                    <Typography align="center" variant="body2">
-                      FINFLUX
-                    </Typography>
-                  </Grid>
-                  <Grid item align="center">
-                    <Image
-                      src="/cuvette/VECTORISED AL.png"
-                      alt="orbit"
-                      width={50}
-                      height={50}
-                    />
-                    <Typography align="center" variant="body2">
-                      VECTORISED
-                    </Typography>
-                  </Grid>
-                  <Grid item align="center">
-                    <Image
-                      src="/cuvette/TGH TECH.png"
-                      alt="orbit"
-                      width={50}
-                      height={50}
-                    />
-                    <Typography align="center" variant="body2">
-                      TGH Tech
-                    </Typography>
-                  </Grid>
-                  <Grid item align="center">
-                    <Image
-                      src="/cuvette/interview.svg"
-                      alt="orbit"
-                      width={50}
-                      height={50}
-                    />
-                    <Typography align="center" variant="body2">
-                      Interview
-                    </Typography>
-                  </Grid>
-                  <Grid item align="center">
-                    <Image
-                      src="/cuvette/FUNDFINA.png"
-                      alt="orbit"
-                      width={50}
-                      height={50}
-                    />
-                    <Typography align="center" variant="body2">
-                      FUNDFINA
-                    </Typography>
-                  </Grid>
-                  <Grid item align="center">
+                  <Grid item align="center" variant="body2">
                     <Image
                       src="/cuvette/vysiontech.png"
                       alt="vysion tech"
                       width={120}
                       height={50}
                     />
-                    <Typography align="center" variant="body2">
-                      Vysion Technology
-                    </Typography>
+                    <Typography align="center">Vysion Technology</Typography>
                   </Grid>
-                  <Grid item align="center">
+
+                  <Grid item align="center" variant="body2">
                     <Image
-                      src="/cuvette/retailpulse.png"
-                      alt="retail pulse"
-                      width={120}
-                      height={50}
-                    />
-                    <Typography align="center" variant="body2">
-                      Retail Pulse.
-                    </Typography>
-                  </Grid>
-                  <Grid item align="center">
-                    <Image
-                      src="/cuvette/shubhwed.svg"
-                      alt="shubhwed"
+                      src="/cuvette/fl.svg"
+                      alt="FL"
                       width={50}
                       height={50}
                     />
-                    <Typography align="center" variant="body2">
-                      Shubhwed
-                    </Typography>
+                    <Typography align="center">FL</Typography>
                   </Grid>
-                  <Grid item align="center">
+                  <Grid item align="center" variant="body2">
+                    <Image
+                      src="/cuvette/WAVE CONCEPT.png"
+                      alt="WAVE CONCEPT"
+                      width={50}
+                      height={50}
+                    />
+                    <Typography align="center">Wave Concept</Typography>
+                  </Grid>
+                  <Grid item align="center" variant="body2">
+                    <Image
+                      src="/cuvette/visionmagitech.png"
+                      alt="Magitech Innovation"
+                      width={50}
+                      height={50}
+                    />
+                    <Typography align="center">Magitech Innovation</Typography>
+                  </Grid>
+                  <Grid item align="center" variant="body2">
+                    <Image
+                      src="/cuvette/ONI.png"
+                      alt="ONI"
+                      width={50}
+                      height={50}
+                    />
+                    <Typography align="center">ONI</Typography>
+                  </Grid>
+                  <Grid item align="center" variant="body2">
+                    <Image
+                      src="/cuvette/image 1469.png"
+                      alt="orbit"
+                      width={50}
+                      height={50}
+                    />
+                    <Typography align="center">Orbit</Typography>
+                  </Grid>
+                  <br />
+                  <Grid item align="center" variant="body2">
+                    <Image
+                      src="/cuvette/ZS.png"
+                      alt="orbit"
+                      width={50}
+                      height={50}
+                    />
+                    <Typography align="center">ZS</Typography>
+                  </Grid>
+                  <Grid item align="center" variant="body2">
+                    <Image
+                      src="/cuvette/FINFLUX.png"
+                      alt="orbit"
+                      width={50}
+                      height={50}
+                    />
+                    <Typography align="center">FINFLUX</Typography>
+                  </Grid>
+                  <Grid item align="center" variant="body2">
+                    <Image
+                      src="/cuvette/VECTORISED AL.png"
+                      alt="orbit"
+                      width={50}
+                      height={50}
+                    />
+                    <Typography align="center">VECTORISED</Typography>
+                  </Grid>
+                  <Grid item align="center" variant="body2">
+                    <Image
+                      src="/cuvette/TGH TECH.png"
+                      alt="orbit"
+                      width={50}
+                      height={50}
+                    />
+                    <Typography align="center">TGH Tech</Typography>
+                  </Grid>
+                  <Grid item align="center" variant="body2">
+                    <Image
+                      src="/cuvette/interview.svg"
+                      alt="orbit"
+                      width={50}
+                      height={50}
+                    />
+                    <Typography align="center">Interview</Typography>
+                  </Grid>
+                  <Grid item align="center" variant="body2">
+                    <Image
+                      src="/cuvette/FUNDFINA.png"
+                      alt="orbit"
+                      width={50}
+                      height={50}
+                    />
+                    <Typography align="center">FUNDFINA</Typography>
+                  </Grid>
+                  <Grid item align="center" variant="body2">
                     <Image
                       src="/cuvette/M2P.svg"
                       alt="orbit"
                       width={50}
                       height={50}
                     />
-                    <Typography align="center" variant="body2">
-                      M2P
-                    </Typography>
+                    <Typography align="center">M2P</Typography>
                   </Grid>
                 </Grid>
               </Grid>

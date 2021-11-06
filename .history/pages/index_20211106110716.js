@@ -414,9 +414,7 @@ export default function Home() {
                       width={150}
                       height={50}
                     />
-                    <Typography align="center" variant="body2">
-                      Krishi Network
-                    </Typography>
+                    <Typography align="center">Krishi Network</Typography>
                   </Grid>
                   <Grid item align="center">
                     <Image
@@ -425,9 +423,7 @@ export default function Home() {
                       width={50}
                       height={50}
                     />
-                    <Typography align="center" variant="body2">
-                      Beyond Innovation
-                    </Typography>
+                    <Typography align="center">Beyond Innovation</Typography>
                   </Grid>
                   <Grid item align="center">
                     <Image
@@ -436,10 +432,18 @@ export default function Home() {
                       width={50}
                       height={50}
                     />
-                    <Typography align="center" variant="body2">
-                      Fur Ball Story
-                    </Typography>
+                    <Typography align="center">Fur Ball Story</Typography>
                   </Grid>
+                  <Grid item align="center">
+                    <Image
+                      src="/cuvette/vysiontech.png"
+                      alt="vysion tech"
+                      width={120}
+                      height={50}
+                    />
+                    <Typography align="center">Vysion Technology</Typography>
+                  </Grid>
+
                   <Grid item align="center">
                     <Image
                       src="/cuvette/fl.svg"
@@ -447,9 +451,7 @@ export default function Home() {
                       width={50}
                       height={50}
                     />
-                    <Typography align="center" variant="body2">
-                      FL
-                    </Typography>
+                    <Typography align="center">FL</Typography>
                   </Grid>
                   <Grid item align="center">
                     <Image
@@ -458,9 +460,7 @@ export default function Home() {
                       width={50}
                       height={50}
                     />
-                    <Typography align="center" variant="body2">
-                      Wave Concept
-                    </Typography>
+                    <Typography align="center">Wave Concept</Typography>
                   </Grid>
                   <Grid item align="center">
                     <Image
@@ -469,9 +469,7 @@ export default function Home() {
                       width={50}
                       height={50}
                     />
-                    <Typography align="center" variant="body2">
-                      Magitech Innovation
-                    </Typography>
+                    <Typography align="center">Magitech Innovation</Typography>
                   </Grid>
                   <Grid item align="center">
                     <Image
@@ -480,9 +478,7 @@ export default function Home() {
                       width={50}
                       height={50}
                     />
-                    <Typography align="center" variant="body2">
-                      ONI
-                    </Typography>
+                    <Typography align="center">ONI</Typography>
                   </Grid>
                   <Grid item align="center">
                     <Image
@@ -491,9 +487,7 @@ export default function Home() {
                       width={50}
                       height={50}
                     />
-                    <Typography align="center" variant="body2">
-                      Orbit
-                    </Typography>
+                    <Typography align="center">Orbit</Typography>
                   </Grid>
                   <br />
                   <Grid item align="center">
@@ -503,9 +497,7 @@ export default function Home() {
                       width={50}
                       height={50}
                     />
-                    <Typography align="center" variant="body2">
-                      ZS
-                    </Typography>
+                    <Typography align="center">ZS</Typography>
                   </Grid>
                   <Grid item align="center">
                     <Image
@@ -514,9 +506,7 @@ export default function Home() {
                       width={50}
                       height={50}
                     />
-                    <Typography align="center" variant="body2">
-                      FINFLUX
-                    </Typography>
+                    <Typography align="center">FINFLUX</Typography>
                   </Grid>
                   <Grid item align="center">
                     <Image
@@ -525,9 +515,7 @@ export default function Home() {
                       width={50}
                       height={50}
                     />
-                    <Typography align="center" variant="body2">
-                      VECTORISED
-                    </Typography>
+                    <Typography align="center">VECTORISED</Typography>
                   </Grid>
                   <Grid item align="center">
                     <Image
@@ -536,9 +524,7 @@ export default function Home() {
                       width={50}
                       height={50}
                     />
-                    <Typography align="center" variant="body2">
-                      TGH Tech
-                    </Typography>
+                    <Typography align="center">TGH Tech</Typography>
                   </Grid>
                   <Grid item align="center">
                     <Image
@@ -547,9 +533,7 @@ export default function Home() {
                       width={50}
                       height={50}
                     />
-                    <Typography align="center" variant="body2">
-                      Interview
-                    </Typography>
+                    <Typography align="center">Interview</Typography>
                   </Grid>
                   <Grid item align="center">
                     <Image
@@ -558,42 +542,7 @@ export default function Home() {
                       width={50}
                       height={50}
                     />
-                    <Typography align="center" variant="body2">
-                      FUNDFINA
-                    </Typography>
-                  </Grid>
-                  <Grid item align="center">
-                    <Image
-                      src="/cuvette/vysiontech.png"
-                      alt="vysion tech"
-                      width={120}
-                      height={50}
-                    />
-                    <Typography align="center" variant="body2">
-                      Vysion Technology
-                    </Typography>
-                  </Grid>
-                  <Grid item align="center">
-                    <Image
-                      src="/cuvette/retailpulse.png"
-                      alt="retail pulse"
-                      width={120}
-                      height={50}
-                    />
-                    <Typography align="center" variant="body2">
-                      Retail Pulse.
-                    </Typography>
-                  </Grid>
-                  <Grid item align="center">
-                    <Image
-                      src="/cuvette/shubhwed.svg"
-                      alt="shubhwed"
-                      width={50}
-                      height={50}
-                    />
-                    <Typography align="center" variant="body2">
-                      Shubhwed
-                    </Typography>
+                    <Typography align="center">FUNDFINA</Typography>
                   </Grid>
                   <Grid item align="center">
                     <Image
@@ -602,9 +551,7 @@ export default function Home() {
                       width={50}
                       height={50}
                     />
-                    <Typography align="center" variant="body2">
-                      M2P
-                    </Typography>
+                    <Typography align="center">M2P</Typography>
                   </Grid>
                 </Grid>
               </Grid>

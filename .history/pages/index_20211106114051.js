@@ -586,17 +586,6 @@ export default function Home() {
                   </Grid>
                   <Grid item align="center">
                     <Image
-                      src="/cuvette/shubhwed.svg"
-                      alt="shubhwed"
-                      width={50}
-                      height={50}
-                    />
-                    <Typography align="center" variant="body2">
-                      Shubhwed
-                    </Typography>
-                  </Grid>
-                  <Grid item align="center">
-                    <Image
                       src="/cuvette/M2P.svg"
                       alt="orbit"
                       width={50}
