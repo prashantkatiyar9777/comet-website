@@ -420,28 +420,10 @@ export default function Home() {
                     <Image
                       src="/cuvette/beyondinnovation.jpg"
                       alt="beyond Innovation"
-                      width={50}
+                      width={60}
                       height={50}
                     />
                     <Typography align="center">Beyond Innovation</Typography>
-                  </Grid>
-                  <Grid item align="center">
-                    <Image
-                      src="/cuvette/furballstory.jpeg"
-                      alt="fur ball story"
-                      width={50}
-                      height={50}
-                    />
-                    <Typography align="center">Fur Ball Story</Typography>
-                  </Grid>
-                  <Grid item align="center">
-                    <Image
-                      src="/cuvette/vysiontech.png"
-                      alt="vysion tech"
-                      width={120}
-                      height={50}
-                    />
-                    <Typography align="center">Vysion Technology</Typography>
                   </Grid>
 
                   <Grid item align="center">
@@ -453,96 +435,86 @@ export default function Home() {
                     />
                     <Typography align="center">FL</Typography>
                   </Grid>
-                  <Grid item align="center">
+                  <Grid item>
                     <Image
                       src="/cuvette/WAVE CONCEPT.png"
                       alt="WAVE CONCEPT"
                       width={50}
                       height={50}
                     />
-                    <Typography align="center">Wave Concept</Typography>
                   </Grid>
-                  <Grid item align="center">
+                  <Grid item>
                     <Image
                       src="/cuvette/ONI.png"
                       alt="ONI"
                       width={50}
                       height={50}
                     />
-                    <Typography align="center">ONI</Typography>
                   </Grid>
-                  <Grid item align="center">
+                  <Grid item>
                     <Image
                       src="/cuvette/image 1469.png"
                       alt="orbit"
                       width={50}
                       height={50}
                     />
-                    <Typography align="center">Orbit</Typography>
                   </Grid>
                   <br />
-                  <Grid item align="center">
+                  <Grid item>
                     <Image
                       src="/cuvette/ZS.png"
                       alt="orbit"
                       width={50}
                       height={50}
                     />
-                    <Typography align="center">ZS</Typography>
                   </Grid>
-                  <Grid item align="center">
+                  <Grid item>
                     <Image
                       src="/cuvette/FINFLUX.png"
                       alt="orbit"
                       width={50}
                       height={50}
                     />
-                    <Typography align="center">FINFLUX</Typography>
                   </Grid>
-                  <Grid item align="center">
+                  <Grid item>
                     <Image
                       src="/cuvette/VECTORISED AL.png"
                       alt="orbit"
                       width={50}
                       height={50}
                     />
-                    <Typography align="center">VECTORISED</Typography>
                   </Grid>
-                  <Grid item align="center">
+                  <Grid item>
                     <Image
                       src="/cuvette/TGH TECH.png"
                       alt="orbit"
                       width={50}
                       height={50}
                     />
-                    <Typography align="center">TGH Tech</Typography>
                   </Grid>
-                  <Grid item align="center">
+                  <Grid item>
                     <Image
                       src="/cuvette/interview.svg"
                       alt="orbit"
                       width={50}
                       height={50}
                     />
-                    <Typography align="center">Interview</Typography>
                   </Grid>
-                  <Grid item align="center">
+                  <Grid item>
                     <Image
                       src="/cuvette/FUNDFINA.png"
                       alt="orbit"
                       width={50}
                       height={50}
                     />
-                    <Typography align="center">FUNDFINA</Typography>
                   </Grid>
-                  <Grid item align="center">
+                  <Grid item>
                     <Image
                       src="/cuvette/M2P.svg"
                       alt="orbit"
                       width={50}
                       height={50}
                     />
-                    <Typography align="center">M2P</Typography>
                   </Grid>
                 </Grid>
               </Grid>

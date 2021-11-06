@@ -517,32 +517,29 @@ export default function Home() {
                     />
                     <Typography align="center">TGH Tech</Typography>
                   </Grid>
-                  <Grid item align="center">
+                  <Grid item>
                     <Image
                       src="/cuvette/interview.svg"
                       alt="orbit"
                       width={50}
                       height={50}
                     />
-                    <Typography align="center">Interview</Typography>
                   </Grid>
-                  <Grid item align="center">
+                  <Grid item>
                     <Image
                       src="/cuvette/FUNDFINA.png"
                       alt="orbit"
                       width={50}
                       height={50}
                     />
-                    <Typography align="center">FUNDFINA</Typography>
                   </Grid>
-                  <Grid item align="center">
+                  <Grid item>
                     <Image
                       src="/cuvette/M2P.svg"
                       alt="orbit"
                       width={50}
                       height={50}
                     />
-                    <Typography align="center">M2P</Typography>
                   </Grid>
                 </Grid>
               </Grid>
