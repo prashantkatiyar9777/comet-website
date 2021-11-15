@@ -257,10 +257,15 @@ export default function Home() {
                   Recognized by
                 </Typography>
               </Grid>
-              <br />
+              <Grid item>
+                <br />
+                <Link href="https://newgeniedc.iiita.ac.in/" color="inherit">
+                  <Image src="/iedc.png" alt="orbit" width={277} height={110} />
+                </Link>
+              </Grid>
               <Grid item>
                 <Typography variant="h5" align="center">
-                  Incubated by
+                  Recognized by
                 </Typography>
                 <br />
                 <Grid
@@ -284,12 +289,25 @@ export default function Home() {
                     </Link>
                   </Grid>
                   <Grid item>
-                    <Link href="http://iimlincubator.com/" color="inherit">
+                    <Link href="https://dst.gov.in/" color="inherit">
                       <Image
-                        src="/IIMLIncubator_Logo_final_transparent_834a156535.png"
+                        src="/dst.png"
                         alt="orbit"
-                        width={280}
-                        height={75}
+                        width={177}
+                        height={150}
+                      />
+                    </Link>
+                  </Grid>
+                  <Grid item>
+                    <Link
+                      href="https://https://www.nstedb.com/"
+                      color="inherit"
+                    >
+                      <Image
+                        src="/nstedb.jpg"
+                        alt="orbit"
+                        width={177}
+                        height={150}
                       />
                     </Link>
                   </Grid>

@@ -253,11 +253,12 @@ export default function Home() {
               spacing={3}
             >
               <Grid item>
+                <br
                 <Typography variant="h3" color="primary" align="center">
                   Recognized by
                 </Typography>
               </Grid>
-              <br />
+
               <Grid item>
                 <Typography variant="h5" align="center">
                   Incubated by
@@ -284,12 +285,25 @@ export default function Home() {
                     </Link>
                   </Grid>
                   <Grid item>
-                    <Link href="http://iimlincubator.com/" color="inherit">
+                    <Link href="https://dst.gov.in/" color="inherit">
                       <Image
-                        src="/IIMLIncubator_Logo_final_transparent_834a156535.png"
+                        src="/dst.png"
                         alt="orbit"
-                        width={280}
-                        height={75}
+                        width={177}
+                        height={150}
+                      />
+                    </Link>
+                  </Grid>
+                  <Grid item>
+                    <Link
+                      href="https://https://www.nstedb.com/"
+                      color="inherit"
+                    >
+                      <Image
+                        src="/nstedb.jpg"
+                        alt="orbit"
+                        width={177}
+                        height={150}
                       />
                     </Link>
                   </Grid>

@@ -284,12 +284,15 @@ export default function Home() {
                     </Link>
                   </Grid>
                   <Grid item>
-                    <Link href="http://iimlincubator.com/" color="inherit">
+                    <Link
+                      href="https://https://www.nstedb.com/"
+                      color="inherit"
+                    >
                       <Image
                         src="/IIMLIncubator_Logo_final_transparent_834a156535.png"
                         alt="orbit"
-                        width={280}
-                        height={75}
+                        width={300}
+                        height={80}
                       />
                     </Link>
                   </Grid>

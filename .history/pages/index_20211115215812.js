@@ -257,44 +257,31 @@ export default function Home() {
                   Recognized by
                 </Typography>
               </Grid>
-              <br />
+
+              <Grid
+                container
+                direction="row"
+                alignItems="center"
+                justify="center"
+                spacing={10}
+              ></Grid>
               <Grid item>
                 <Typography variant="h5" align="center">
                   Incubated by
                 </Typography>
                 <br />
-                <Grid
-                  container
-                  direction="row"
-                  alignItems="center"
-                  justify="center"
-                  spacing={10}
-                >
-                  <Grid item>
-                    <Link
-                      href="https://newgeniedc.iiita.ac.in/"
-                      color="inherit"
-                    >
-                      <Image
-                        src="/iedc.png"
-                        alt="orbit"
-                        width={277}
-                        height={110}
-                      />
-                    </Link>
-                  </Grid>
-                  <Grid item>
-                    <Link href="http://iimlincubator.com/" color="inherit">
-                      <Image
-                        src="/IIMLIncubator_Logo_final_transparent_834a156535.png"
-                        alt="orbit"
-                        width={280}
-                        height={75}
-                      />
-                    </Link>
-                  </Grid>
-                </Grid>
-                <br />
+                <Link href="https://newgeniedc.iiita.ac.in/" color="inherit">
+                  <Image src="/iedc.png" alt="orbit" width={277} height={110} />
+                </Link>
+                <Typography variant="h5" align="center">
+                  and
+                </Typography>
+                <Link href="https://newgeniedc.iiita.ac.in/" color="inherit">
+                  <Image src="/iedc.png" alt="orbit" width={277} height={110} />
+                </Link>
+              </Grid>
+
+              <Grid item>
                 <Typography variant="h5" align="center">
                   Powered by
                 </Typography>

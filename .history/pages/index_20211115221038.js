@@ -288,8 +288,8 @@ export default function Home() {
                       <Image
                         src="/IIMLIncubator_Logo_final_transparent_834a156535.png"
                         alt="orbit"
-                        width={280}
-                        height={75}
+                        width={300}
+                        height={80}
                       />
                     </Link>
                   </Grid>
